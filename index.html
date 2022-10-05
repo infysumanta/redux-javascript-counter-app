@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redux Javascript Counter App</title>
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.2.0/redux.min.js"></script>
+  </head>
+  <body>
+    <h1 id="counter-value">1</h1>
+
+    <h3>Step</h3>
+
+    <button class="steps active" id="payload5" onClick="setPayload(5)">
+      5
+    </button>
+    <button class="steps" id="payload10" onClick="setPayload(10)">10</button>
+    <button class="steps" id="payload15" onClick="setPayload(15)">15</button>
+
+    <h3>Max Value</h3>
+
+    <button class="maxvalue active" id="maxValue15" onClick="setMaxValue(15)">
+      15
+    </button>
+    <button class="maxvalue" id="maxValue100" onClick="setMaxValue(100)">
+      100
+    </button>
+    <button class="maxvalue" id="maxValue200" onClick="setMaxValue(200)">
+      200
+    </button>
+
+    <br />
+
+    <button class="increment">Increment</button>
+    <button class="decrement">Decrement</button>
+    <button class="reset">Reset</button>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
